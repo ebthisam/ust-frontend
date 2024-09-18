@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+<h1 style="text-align: center;margin-bottom: -2cm;">SUDOKU!!</h1>
+    <div class="container">
+        <div class="sudoku">
+            <div class="main-box">
+                <div contenteditable="false">5</div>
+                <div contenteditable="false">1</div>
+                <div contenteditable="false">8</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">6</div>
+                <div contenteditable="false">4</div>
+                <div contenteditable="false">3</div>
+                <div contenteditable="true"></div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="false">6</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">2</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+            </div>
+            
+            <div class="main-box">
+                <div contenteditable="false">4</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">7</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">6</div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="false">7</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">6</div>
+                <div contenteditable="false">4</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">5</div>
+                <div contenteditable="true"></div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">1</div>
+                <div contenteditable="false">8</div>
+                <div contenteditable="false">7</div>
+                <div contenteditable="false">2</div>
+                <div contenteditable="false">6</div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="true"></div>
+                <div contenteditable="false">3</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">2</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">5</div>
+                <div contenteditable="false">9</div>
+                <div contenteditable="false">4</div>
+                <div contenteditable="true">8</div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">9</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">2</div>
+                <div contenteditable="false">1</div>
+                <div contenteditable="false">3</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">1</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">4</div>
+                <div contenteditable="true"></div>
+            </div>
+            <div class="main-box">
+                <div contenteditable="false">8</div>
+                <div contenteditable="false">2</div>
+                <div contenteditable="false">3</div>
+                <div contenteditable="false">7</div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="true"></div>
+                <div contenteditable="false">6</div>
+                <div contenteditable="false">9</div>
+            </div>
+            
+        </div>
+        <br>
+        <button onclick="validateSudoku()">Submit</button>
+    </div>
+
+    <script>
+        function validateSudoku()
+        {
+
+            const grid=[];
+            const sudokuContainer= document.querySelector('.sudoku');
+            
+            sudokuContainer.querySelectorAll('.main-box').forEach((box)=>{
+                const row=[]
+                box.querySelectorAll('div').forEach((cell)=>{
+                    const value=cell.innerText.trim();
+                    row.push(value?parseInt(value):null);
+
+                })
+                grid.push(row);
+
+                })
+
+                function hasDuplicates(arr){
+                    const filteredArr=arr.filter((num)=>num!==null);
+                    return new Set(filteredArr).size!==filteredArr.length;
+                    
+                }
+                for(let i=0;i<9;i++){
+                    const row=grid[i];
+                    const column=grid.map(row=>row[i]);
+                    if(hasDuplicates(row)||hasDuplicates(column)){
+                        alert("Invalid Sudoku");
+                        return;
+                    }
+                }
+
+                for(let i=0;i<9;i+=3){
+                    for(let j=0;j<9;j+=3){
+                        const box=[];
+                        for(let x=i;x<i+3;x++){
+                            for(let y=j;y<j+3;y++){
+                                box.push(grid[x][y])
+
+                            }
+                        }
+                        if(hasDuplicates(box)){
+                            alert("Invalid sudoku")
+                            return;
+                        }
+                    }
+                }
+
+
+
+                alert("Sudoku is valid");
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function validateSudoku() {
+        //     const grid = [];
+        //     const sudokuContainer = document.querySelector('.sudoku');
+
+        //     // Collecting values from the Sudoku grid
+        //     sudokuContainer.querySelectorAll('.main-box').forEach(box => {
+        //         const row = [];
+        //         box.querySelectorAll('div').forEach(cell => {
+        //             const value = cell.innerText.trim();
+        //             row.push(value ? parseInt(value) : null);
+        //         });
+        //         grid.push(row);
+        //     });
+
+        //     // Function to check if a row, column, or box contains duplicates
+        //     function hasDuplicates(arr) {
+        //         const filteredArr = arr.filter(num => num !== null);
+        //         return new Set(filteredArr).size !== filteredArr.length;
+        //     }
+
+        //     // Check rows and columns
+        //     for (let i = 0; i < 9; i++) {
+        //         const row = grid[i];
+        //         const column = grid.map(row => row[i]);
+
+        //         if (hasDuplicates(row) || hasDuplicates(column)) {
+        //             alert("Sudoku is invalid!");
+        //             return;
+        //         }
+        //     }
+
+        //     // Check 3x3 boxes
+        //     for (let i = 0; i < 9; i += 3) {
+        //         for (let j = 0; j < 9; j += 3) {
+        //             const box = [];
+
+        //             for (let x = i; x < i + 3; x++) {
+        //                 for (let y = j; y < j + 3; y++) {
+        //                     box.push(grid[x][y]);
+        //                 }
+        //             }
+
+        //             if (hasDuplicates(box)) {
+        //                 alert("Sudoku is invalid!");
+        //                 return;
+        //             }
+        //         }
+        //     }
+
+        //     alert("Sudoku is valid!");
+        // }
+    </script>
+    
+</body>
+</html>

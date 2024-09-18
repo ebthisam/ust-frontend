@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #858585;
+}
+
+.container {
+    display: grid;
+    width: 324px; /* Adjusted to fit 9 cells x 36px */
+    padding-bottom: 2.4cm;
+}
+
+.sudoku {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    background-color: black;
+    padding: 3px;
+    box-shadow: gray;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.main-box div{
+
+    background-color: rgb(241, 241, 241);
+border-color: solid black;
+text-align: center;
+width: 36px;
+height: 36px;}
+
