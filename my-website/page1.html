@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="all"><base href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=IM+Fell+French+Canon:ital@0;1&family=New+Tegomin&family=Noto+Naskh+Arabic:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+TZ:wght@100..400&display=swap" rel="stylesheet">
+<script>_A={"config":{"v":"?0"},"route":{"new":{"url":"/","page":"ho"},"old":{"url":false,"page":false}},"is":{"ho":true},"was":[]};const v=_A.config.v,n=window.navigator,d=document,a=/Mobi|Android|Tablet|iPad|iPhone/.test(n.userAgent)||"MacIntel"===n.platform&&n.maxTouchPoints>2?"m":"d",l=d.createElement("link");l.href="/css/"+a+".css"+v,l.rel="stylesheet",d.head.appendChild(l);const s=d.createElement("script");s.src="/js/"+a+".js"+v,d.onreadystatechange=e=>{"complete"===d.readyState&&(d.body.className=localStorage.getItem("th")||"_l",d.body.appendChild(s))};
+</script>
+    <title>lio</title>
+    <link rel="stylesheet" href="page1.css">
+    
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav>
+    <div class="nav-item">
+        <h5 class="h5-head">Ebthisam Moideen Koya:</h5>
+        <h5 class="h5-body">Full Stack Developer</h5>
+    </div>
+    
+    <div class="nav-item">
+        <h5 class="h5-head">Location:</h5>
+        <h5 class="h5-body">
+            <span id="location"></span> | <span id="current-time"></span>
+        </h5>
+    </div>
+    
+    <div class="nav-item">
+        <h5 class="h5-head">Navigation:</h5>
+        <h5 class="h5-body">
+            <a class="h5-body" style="text-decoration: none;" href="#home">Home,</a>
+            <a class="h5-body" style="text-decoration: none;" href="#about">About,</a>
+            <a class="h5-body" style="text-decoration: none;" href="#work">Projects,</a>
+            <a class="h5-body" style="text-decoration: none;" href="#contact">Contact</a>
+        </h5>
+    </div>
+    
+    <!-- Theme Switcher -->
+    <div class="nav-item">
+        <h5 class="h5-head">Themes:</h5>
+        <h5 class="h5-body">
+            <a class="h5-body" style="text-decoration: none;" href="#" onclick="setTheme('light')">Light Mode,</a>
+            <a class="h5-body" style="text-decoration: none;" href="#" onclick="setTheme('dark')">Dark Mode</a>
+        </h5>
+    </div>
+</nav>
+
+    
+    
+    
+    
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            
+            <h1>Ebthisam Moideen Koya</h1>
+            <p>Your Profession</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A brief introduction about yourself, your background, and what you do.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                </div>
+                <div class="work-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
+            <a href="mailto:your.email@example.com" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById("current-time");
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+            timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        function updateLocation() {
+            const locationElement = document.getElementById("location");
+    
+            // Check if Geolocation is supported
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+    
+                        // Using an external API to convert lat/lon to city and country (example: OpenWeatherMap, Google Geocoding API)
+                        // Here's a placeholder for the location, you can replace it with an API call:
+                        locationElement.textContent = `Lat: ${latitude.toFixed(2)}, Lon: ${longitude.toFixed(2)}`;
+                        
+                        // Example to use OpenWeatherMap API (replace with your own API key):
+                        // const apiKey = 'YOUR_API_KEY';
+                        // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
+                        //     .then(response => response.json())
+                        //     .then(data => {
+                        //         const city = data.name;
+                        //         const country = data.sys.country;
+                        //         locationElement.textContent = `${city}, ${country}`;
+                        //     });
+                    },
+                    (error) => {
+                        locationElement.textContent = "Unable to retrieve location.";
+                    }
+                );
+            } else {
+                locationElement.textContent = "Geolocation not supported.";
+            }
+        }
+    
+        // Update time immediately and then every second
+        updateTime();
+        setInterval(updateTime, 1000);
+    
+        // Update location
+        updateLocation();
+        document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        // Here, you can implement specific logic if needed, but avoid redirecting to another page.
+        // You can conditionally check if the link is internal (e.g., it contains a hash).
+        const target = this.getAttribute('href');
+        if (target.startsWith('#')) {
+            // Scroll to the target section within the same page
+            e.preventDefault();  // Prevent the default only if necessary
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            // If it links to an external page or other content, allow it
+            // No need to preventDefault or change window.location.href
+        }
+    });
+});
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.body.classList.remove('dark-theme');
+                document.body.classList.add('light-theme');
+                localStorage.setItem('theme', 'light');
+            } else if (theme === 'dark') {
+                document.body.classList.remove('light-theme');
+                document.body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load the theme from localStorage on page load
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            }
+        };
+o    </script>
+    
+    
+
+</body>
+</html>
