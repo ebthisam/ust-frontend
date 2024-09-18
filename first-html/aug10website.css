@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+display: grid;
+grid-template-areas: 
+"heading heading heading"
+"nav main aside"
+"nav footer footer";
+grid-template-rows: 150px 1fr 70px;
+ grid-template-columns: 150px 1fr 70px;
+row-gap: 10px; 
+column-gap: 10px;
+background-color: rgb(209, 209, 209);
+
+}
+header{
+    grid-area: heading;
+    background-color: rgb(156, 132, 88);
+    border-radius: 7pt;
+    align-content: center;
+}
+main{
+    grid-area: main;
+    text-align: justify;
+    background-color: wheat;
+    border-radius: 7pt;
+    padding: 10px;
+
+}
+.nav1{
+    grid-area: nav;
+    background-color: rgb(170, 151, 116);
+    border-radius: 7pt;
+
+
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(170, 151, 116);
+    border-radius: 7pt;
+
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(134, 119, 89);
+    border-radius: 7pt;
+
+}
+header>nav>a{
+    color: white;
+    float: left;
+    padding: 15px 55px;
+}
+header>nav{
+    margin-left: 26.5cm;
+    margin-top: 3pt;
+    padding-bottom: 1cm;
+    justify-content: end;
+}
+header>nav>ul{
+    justify-content: center;
+    height: 100%;
+}
+header>nav>a{
+    padding: 5px;
+    row-gap: 5px;
+}
+
+@media screen and(max-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 10px ;
+    background-color: black;
+}
+.container{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+     height: 100vh;
+     align-content:center ;
+     align-items: center;
+     
+     justify-items: center;
+}
+.col1{
+    background-color: yellow; 
+    gap: 5px;
+    display: grid;padding: 10px; 
+    text-align: center;
+}
+.col2{
+    background-color: cornsilk;
+     padding: 10px;
+}
+.col3{
+    background-color: rgb(55, 0, 255);
+    padding: 10px;
+}
+p{
+
+    background-color: black; 
+    color: red;
+    padding: 5px;
+}

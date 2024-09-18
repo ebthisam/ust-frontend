@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UST-Trivandrum</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;"><img src="logo.jpg" height="35pt">Types of tags in HTML </h1>
+
+    <p style="text-align: center;"><a  href="#bottom">go to bottom</a></p>
+    <p id="top"></p>
+    <table style="padding-left: 15%;">
+        <tr>
+            <td style="padding-left: 40pt;"><a href="#general">General Classification</td>
+           <td style="padding-left: 40pt;"><a href="#text"> Text Modification Tags</a></td>
+           <td style="padding-left: 40pt;"><a href="#list">Lists</a></td>
+           <td style="padding-left: 40pt;"><a href="#Media">Media Tags</a> </td>
+           <td style="padding-left: 40pt;"><a href="#Container">Container Tags</a></td>
+        </tr>
+    </table>
+
+    <table border="3">
+        <tr>
+            <tr>
+                <th id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">General Classification</th>
+            </tr>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">Container tags which don't have their own content: <closed:ol> <li>div:The &lt;div&gt; element should be used only when no other semantic element (such as &lt;article&gt;or &lt;nav&gt;) is appropriate. </li> <li>table</li><li> body </li><li> head</li></ol></td>
+            <td><blockquote> tags which need not be <closed:ol><li>br</li>
+            <li>img</li>
+            <li>hr</li></closed:ol> </blockquote> </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">tags which must be opened and closed the content is entered in between opening and closing tags: <closed:ol><li>h1</li>
+            <li>td</li>
+            <li>p</li>
+            <li>b</li>
+            </closed:ol>  </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">Parent and child tags: <ul><li>table</li>
+            <li>tr</li>
+            <li>td</li></ul></td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">tags have attributes-like <ul><li>id</li>
+            <li>class</li>
+            <li>stylr</li></ul> </td>
+        </tr>
+        <tr>
+            <tr>
+                <th id="text" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Text Modification Tags</th>
+            </tr>
+            <td>
+                <table border="3" style="width: 100%; height: 340px; border-radius: 13pt; padding: 5pt;">
+
+                    <tr>
+                        <td>
+                            <h1 style="color: brown;font-size: 55pt;">h1</h1>
+                        </td>
+                        <td>
+                            <h2 style="color: burlywood; font-size: 45pt;">h2</h2>
+                        </td>
+                        <td>
+                            <h3 style="color: cadetblue; font-size: 35pt;">h3</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="color: chocolate; font-size: 25pt;">h4</h4>
+                        </td>
+                        <td>
+                            <h5 style="color: darkgoldenrod;font-size: 15pt;">h5</h5>
+                        </td>
+                        <td>
+                            <h6 style="color: darkmagenta;font-size: 5pt;">h6</h6>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td> 
+                <table border="3" style="width: 100%; height: 340px; border-radius: 13pt; padding: 5pt;">
+                    <tr><td id="text">Text formatting: &lt;b &gt; &lt;/b &gt;</td></tr>
+               
+                    <tr>
+                        <td><b>bold</b> </td>
+                    </tr>
+                    <tr>
+                        <td><i>italic</i></td>
+                    </tr>
+                    <tr>
+                        <td><u>underline</u></td>
+                    </tr>
+
+                    <tr>
+                        <td><strike>strike</strike> </td>
+                    </tr>
+                    <tr>
+                        <td>X<sup>superscript</sup> y <sub>subscript</sub></td>
+                    </tr>
+                </table>
+
+            </td>
+            <td style="text-align: center;">Punctuation tags :
+                <blockquote><q> I'm a Trillionare</q> </blockquote>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">&lt;p&gt;&lt;/p&gt;
+                <p>Lorem ipsum <code>push()</code> sit amet, consectetur adipisicing elit. Aliquid, ad.
+                </p>
+            </td>
+            <td style="text-align: center;" >&lt;a&gt;&lt;/a&gt; <a href="http://localhost:8090">Click to go.</a>
+            </td>
+        </tr>
+        <tr style="height: 50pt;">
+            <th id="list" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">LISTS</th>
+        </tr>
+        <tr>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;"><br>
+                <ol type="a">
+                    <li>Apple</li>
+                    <li>Milk</li>
+                    <li>Bread</li>
+                    <li>chocolate</li>
+                    <li>Eggs</li>
+                </ol>
+                
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;"><ol type="I">
+                <!-- li{Hello$}*5 -->
+                <li>Hello1</li>
+                <li>Hello2</li>
+                <li>Hello3</li>
+                <li>Hello4</li>
+                <li>Hello5</li>
+            </ol>
+        </td>
+        <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ul  ><li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li></ul>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ol type="1">
+                    <!-- li{Hello$}*5 -->
+                    <li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li>
+                </ol>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ol type="i">
+                    <!-- li{Hello$}*5 -->
+                    <li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <th id="Media" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Media Tags</th>
+        </tr>
+        <tr>
+            <td >
+                <h1 style="padding-top: 20pt;text-align: center;">IMAGE TAG</h1><img src="circuit.png" width="300" height="150" alt="CircuitBreaker" style="text-align: justify;"></td>
+            <td>
+                <h1 style="padding-top: 20pt;text-align: center;">VIDEO TAG</h1><video controls autoplay width="300" height="200" poster="circuit.png" loop muted style="text-align: center;"><source src="tech.webm" ></video></td>
+            <td >
+                <h1 style="text-align: center;">AUDIO TAG</h1>&lt;audio&gt;&lt;/audio&gt;<audio src=""></audio></td>
+            <td >
+                <h1 style="text-align: center;">IFRAME TAG</h1><iframe src="first.html" frameborder="3"></iframe></td>
+            <td style="text-align: center;" ><h1>FIGURE TAG</h1><figure><img src="circuit.png" alt="Springboot" style="width: 100pt; height: 50pt;"> <figcaption style="padding-left: 25%;">SpringBoot</figcaption></figure></td>
+        </tr >
+        <tr>
+            <th id="Container" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Container Tags</th>
+        </tr>
+        <tr>
+            
+            <td> <div class="container">
+             <!-- div.container>div*2>h3*2{Hello$} -->
+
+                <div>
+                    <h3>Hello1</h3>
+                    <h3>Hello2</h3>
+                </div>
+                <div>
+                    <h3>Hello1</h3>
+                    <h3>Hello2</h3>
+                </div>
+                
+            </div>
+        </td>
+            <td><span class="content">
+                <!-- span.content>span*2>h3*2{Welcome$} -->
+                <span>
+                    <h3>Welcome1</h3>
+                    <h3>Welcome2</h3>
+                </span>
+                <span>
+                    <h3>Welcome1</h3>
+                    <h3>Welcome2</h3>
+                </span>
+                
+            </span></td>
+            <td>
+                <!-- head>nav>ul>li*3>a:link{Click$} -->
+                <header>
+                    <h2>UST TRV</h2>
+                <nav>
+                    <ul>
+                        <li><a href="http://">Click1</a></li>
+                        <li><a href="http://">Click2</a></li>
+                        <li><a href="http://">Click3</a></li>
+                    </ul>
+                </nav>
+                </header>
+            </td>
+            <td>
+                <!-- main>secion*3>article>p>lorem6 -->
+
+                <main>
+                    <secion>
+                        <article>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </article>
+                    </secion>
+                    <secion>
+                        <article>
+                            <p>Fugiat perferendis sapiente minus culpa voluptas?</p>
+                        </article>
+                    </secion>
+                    <secion>
+                        <article>
+                            <p>Et debitis exercitationem sequi sed suscipit?</p>
+                        </article>
+                    </secion>
+                </main>
+            </td>
+            <td>
+                <!-- header>(h4>{UST TVM}>nav>ul>li*3>a:link{Click$})+(main>section*3>article*3>p>lorem5+aside*2{hello$})+(footer>p+ul>li*2>a:link*2{click$}) -->
+                <header>
+                <h4>
+                    UST TVM
+                    <nav>
+                        <ul>
+                            <li><a href="http://">Click1</a></li>
+                            <li><a href="http://">Click2</a></li>
+                            <li><a href="http://">Click3</a></li>
+                        </ul>
+                    </nav>
+                </h4>
+               </header>
+               <!-- <main>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Dolores nostrum voluptate ab sapiente.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Tempore velit commodi cupiditate assumenda.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Inventore deleniti facilis autem dolorem.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Praesentium nam minus at delectus.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Obcaecati facere quos error alias.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Necessitatibus error totam repudiandae sint!
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+               </main> -->
+               
+
+            </li></td>
+        </tr>
+        <tr style="height: 40pt;">
+            <form action="myForm">
+            <td><label for="calender">Choose DOB: </label><input type="date" name="calender" id="mycal" placeholder="Date"></td>
+            <td><label for="timet1">Choose TIME: </label><input type="time" name="timet1" id="mytime" placeholder="Time"></td>
+            <td><label for="userid">Choose NAME: </label><input type="text" name="userid" id="uid" placeholder="Username"></td>
+            <td><label for="age">Choose AGE: </label><input type="number" name="age" id="agenum" placeholder="Age" min="15" max="35"></td>
+            <td><label for="emailid">Choose EMAIL: </label><input type="email" name="emailid" id="email" placeholder="Email"></td>
+            
+        </form>
+
+        </tr>
+        <tr style="height: 40pt;">
+
+            <td style="text-align: center;"><h3>Choose the color</h3> <input type="color" name="" id=""></td>
+            <td style="text-align: center;"><h3>Choose the range</h3><input type="range"  name="" id=""></td>
+            <td style="text-align: center;"><h3>Search</h3><input type="search" name="" id="" placeholder="search"></td>
+            <td style="text-align: center;"><h3>Button</h3><input type="button" name="" id="" style="width: 3cm;"value="Button" ></td>
+            <td style="text-align: center;"><h3>File</h3><input type="file" name="" id=""></td>
+        </tr>
+        <tr style="height: 100pt;">
+            <td style="text-align: center;"> Checkboxes: <br>Mtech <input type="checkbox" name="degree"><br>MS <input type="checkbox" name="degree"><br>MBA <input type="checkbox" name="degree"></td>
+            <td style="text-align: center;">Radio: <br>Mtech <input type="radio" name="degree" id="" value="mtech"><br>MS <input type="radio" name="degree" value="ms" checked="MS"><br>MBA <input type="radio" name="degree" value="mba"></td>
+            <td style="text-align: center;">
+                <select name="" id="">
+                    <option value="">item1</option>
+                    <option value="">item2</option>
+                    <option value="">item3</option>
+                    <option value="">item4</option>
+                    <option value="">item5</option>
+                    <option value="">item6</option>
+                    <option value="">item7</option>
+                </select>
+
+                
+            </td>
+            <td style="text-align: center;">
+                <!-- select>option[value="item$"]*5>{item$} -->
+
+                <select name="" id="" multiple>
+                    <option value="item1">item1</option>
+                    <option value="item2">item2</option>
+                    <option value="item3">item3</option>
+                    <option value="item4">item4</option>
+                    <option value="item5">item5</option>
+                </select>
+
+            </td>
+            <td style="text-align: center;">Feedback
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            </td>
+        </tr>
+       
+    </table>
+    <button>
+    <a href="#top">go to top</a></button>
+    <p id="bottom"></p>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Ebthisam. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>

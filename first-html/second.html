@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header style="font-size: xx-large;"><img src="logo.jpg" height="35pt" >Types of tags in HTML </header>
+
+<p ><a  href="#bottom">go to bottom</a></p>
+<p id="top"></p>
+<div>
+<a style="padding-left: 170pt;"  href="#genearal">General Classification</a>
+<a style="padding-left: 40pt;"  href="#text">Text Modification Tags</a>
+<a style="padding-left: 40pt;"  href="#list">Lists</a>
+<a style="padding-left: 40pt;" href="#Media">Media Tags</a>
+<a style="padding-left: 40pt;"  href="#Container">Container Tags</a>
+
+
+</div>
+
+<div >
+    <div >Container tags which don't have their own content: <closed:ol> <li>div:The &lt;div&gt; element should be used only when no other semantic element (such as &lt;article&gt;or &lt;nav&gt;) is appropriate. </li> <li>table</li><li> body </li><li> head</li></ol></div>
+    <div >tags which need not be <closed:ol><li>br</li>
+        <li>img</li>
+        <li>hr</li></closed:ol></div>
+    <div>tags which must be opened and closed the content is entered in between opening and closing tags: <closed:ol><li>h1</li>
+            <li>td</li>
+            <li>p</li>
+            <li>b</li>
+            </closed:ol>  </div>
+    <div>Parent and child tags: <closed:ol><li>table</li>
+            <li>tr</li>
+            <li>td</li></closed:ol></div>
+    <div>tags have attributes-like <closed:ol><li>id</li>
+                <li>class</li>
+                <li>stylr</li></closed:ol> </div>
+
+</div>
+
+
+<header>Text Modification Tags</header>
+<div>
+
+    <div>
+                     <h1 style="color: brown;font-size: 55pt;">h1</h1>
+               
+                    <h2 style="color: burlywood; font-size: 45pt;">h2</h2>
+               
+                    <h3 style="color: cadetblue; font-size: 35pt;">h3</h3>
+            
+                    <h4 style="color: chocolate; font-size: 25pt;">h4</h4>
+         
+                    <h5 style="color: darkgoldenrod;font-size: 15pt;">h5</h5>
+                
+                    <h6 style="color: darkmagenta;font-size: 5pt;">h6</h6>
+    </div>
+    <div>
+
+                <tr><td id="text">Text formatting: &lt;b &gt; &lt;/b &gt;</td></tr>
+        
+              <b>bold</b> 
+                
+                    <i>italic</i>
+               
+                    <u>underline</u>
+               
+                    <strike>strike</strike>
+                
+                  X<sup>superscript</sup> y <sub>subscript</sub>
+         
+    </div>
+    <div>
+            Punctuation tags :
+            <blockquote><q> I'm a Trillionare</q> </blockquote>
+
+    </div>
+    <div>
+        &lt;p&gt;&lt;/p&gt;
+        <p>Lorem ipsum <code>push()</code> sit amet, consectetur adipisicing elit. Aliquid, ad.
+        </p>
+  
+    </div>
+    <div>
+
+        &lt;a&gt;&lt;/a&gt; <a href="http://localhost:8090">Click to go.</a>
+        
+    </div>
+</div>
+
+
+<header>Lists</header>
+<div>
+    <ol type="a">
+        <li>Apple</li>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>chocolate</li>
+        <li>Eggs</li>
+    </ol>
+
+
+</div>
+
+<div>
+    <ol type="I">
+        <!-- li{Hello$}*5 -->
+        <li>Hello1</li>
+        <li>Hello2</li>
+        <li>Hello3</li>
+        <li>Hello4</li>
+        <li>Hello5</li>
+    </ol>
+</div>
+<div>
+    <ul  ><li>Hello1</li>
+        <li>Hello2</li>
+        <li>Hello3</li>
+        <li>Hello4</li>
+        <li>Hello5</li></ul>
+</div>
+<div> <ol type="1">
+    <!-- li{Hello$}*5 -->
+    <li>Hello1</li>
+    <li>Hello2</li>
+    <li>Hello3</li>
+    <li>Hello4</li>
+    <li>Hello5</li>
+</ol></div>
+<div>
+
+    <ol type="i">
+        <!-- li{Hello$}*5 -->
+        <li>Hello1</li>
+        <li>Hello2</li>
+        <li>Hello3</li>
+        <li>Hello4</li>
+        <li>Hello5</li>
+    </ol>
+</div>
+<header>Media Tags</header>
+
+<div>
+    <h1 >IMAGE TAG</h1><img src="circuit.png" width="300" height="150" alt="CircuitBreaker" style="text-align: justify;"></td>
+
+</div>
+<div>
+    <h1 >VIDEO TAG</h1><video controls autoplay width="300" height="200" poster="circuit.png" loop muted ><source src="tech.webm" ></video></td>
+
+</div>
+<div>
+    <h1 >AUDIO TAG</h1>&lt;audio&gt;&lt;/audio&gt;<audio src=""></audio></td>
+
+</div>
+<div>
+    <h1 >IFRAME TAG</h1><iframe src="first.html" frameborder="3"></iframe></td>
+
+</div>
+<div>
+    <h1>FIGURE TAG</h1><figure><img src="circuit.png" alt="Springboot" style="width: 100pt; height: 50pt;"> <figcaption >SpringBoot</figcaption></figure>
+</div>
+
+<header>Container Tags</header>
+
+<div>
+    <div class="container">
+        <!-- div.container>div*2>h3*2{Hello$} -->
+
+           <div>
+               <h3>Hello1</h3>
+               <h3>Hello2</h3>
+           </div>
+           <div>
+               <h3>Hello1</h3>
+               <h3>Hello2</h3>
+           </div>
+           
+       </div>
+</div>
+<div><span class="content">
+    <!-- span.content>span*2>h3*2{Welcome$} -->
+    <span>
+        <h3>Welcome1</h3>
+        <h3>Welcome2</h3>
+    </span>
+    <span>
+        <h3>Welcome1</h3>
+        <h3>Welcome2</h3>
+    </span>
+    
+</span></div>
+<div>
+     <!-- head>nav>ul>li*3>a:link{Click$} -->
+     <header>
+        <h2>UST TRV</h2>
+    <nav>
+        <ul>
+            <li><a href="http://">Click1</a></li>
+            <li><a href="http://">Click2</a></li>
+            <li><a href="http://">Click3</a></li>
+        </ul>
+    </nav>
+    </header>
+</div>
+<div>
+    <main>
+        <secion>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </article>
+        </secion>
+        <secion>
+            <article>
+                <p>Fugiat perferendis sapiente minus culpa voluptas?</p>
+            </article>
+        </secion>
+        <secion>
+            <article>
+                <p>Et debitis exercitationem sequi sed suscipit?</p>
+            </article>
+        </secion>
+    </main>
+</div>
+<div><header>
+    <h4>
+        UST TVM
+        <nav>
+            <ul>
+                <li><a href="http://">Click1</a></li>
+                <li><a href="http://">Click2</a></li>
+                <li><a href="http://">Click3</a></li>
+            </ul>
+        </nav>
+    </h4>
+   </header></div>
+<div>
+<div> <label for="calender">Choose DOB: </label><input type="date" name="calender" id="mycal" placeholder="Date">
+</div>
+<div>
+    <label for="timet1">Choose TIME: </label><input type="time" name="timet1" id="mytime" placeholder="Time">
+
+</div>
+<div>   
+    <label for="userid">Choose NAME: </label><input type="text" name="userid" id="uid" placeholder="Username">
+</div>
+<div>
+  <label for="age">Choose AGE: </label><input type="number" name="age" id="agenum" placeholder="Age" min="15" max="35">
+
+</div>
+<div>           
+     <label for="emailid">Choose EMAIL: </label><input type="email" name="emailid" id="email" placeholder="Email">
+</div>
+
+</div>
+
+<div>
+    <div ><h3>Choose the color</h3> <input type="color" name="" id=""></div>
+    <div ><h3>Choose the range</h3><input type="range"  name="" id=""></div>
+    <div ><h3>Search</h3><input type="search" name="" id="" placeholder="search"></div>
+    <div ><h3>Button</h3><input type="button" name="" id="" style="width: 3cm;"value="Button" ></div>
+    <div ><h3>File</h3><input type="file" name="" id=""></div>
+    
+</div>
+
+
+<div>
+    <div > Checkboxes: <br>Mtech <input type="checkbox" name="degree"><br>MS <input type="checkbox" name="degree"><br>MBA <input type="checkbox" name="degree"></div>
+    <div >Radio: <br>Mtech <input type="radio" name="degree" id="" value="mtech"><br>MS <input type="radio" name="degree" value="ms" checked="MS"><br>MBA <input type="radio" name="degree" value="mba"></div>
+    <div >
+        <select name="" id="">
+            <option value="">item1</option>
+            <option value="">item2</option>
+            <option value="">item3</option>
+            <option value="">item4</option>
+            <option value="">item5</option>
+            <option value="">item6</option>
+            <option value="">item7</option>
+        </select>
+
+        
+    </div>
+    <div >
+        <!-- select>option[value="item$"]*5>{item$} -->
+
+        <select name="" id="" multiple>
+            <option value="item1">item1</option>
+            <option value="item2">item2</option>
+            <option value="item3">item3</option>
+            <option value="item4">item4</option>
+            <option value="item5">item5</option>
+        </select>
+
+    </div>
+    <div >Feedback
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    </div>
+    
+    <button>
+        <a href="#top">go to top</a></button>
+        <p id="bottom"></p>
+        <footer>
+            <p >&copy; 2024 Ebthisam. All rights reserved.</p>
+        </footer>
+</div>
+</body>
+</html>

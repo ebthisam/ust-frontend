@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this page helps  to learn html5 elements with bootstrap and google fonts">
+    <meta http-equiv="refresh" content="5">
+    <meta name="keywords" content="html bootstrap">
+    <title>UST-Trivandrum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=New+Tegomin&family=Noto+Naskh+Arabic:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+TZ:wght@100..400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=New+Tegomin&family=Noto+Naskh+Arabic:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=New+Tegomin&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="first-bootstrap.css">
+</head>
+
+<body class="p-3 text-primary-emphasis bg-light-subtle border border-primary-subtle rounded-5 text-center" >
+   <div class="shadow-lg p-3 mb-5 gupter-medium bg-secondary-subtle rounded-4">
+    <h1 style="margin-bottom: 0%; text-align: left"><b>U  S</b></h1>
+    <h1 style="margin-top: 0; text-align: left"><b>T  .</b></h1>
+    <h1 style="text-align: center; margin-top: -2cm;" >Types of tags in HTML </h1>
+</div>
+    <p style="text-align: center;"><a  href="#bottom">go to bottom</a></p>
+    <p id="top"></p>
+    <table >
+        <tr >
+            <td style="padding-left: 270pt;"><a href="#general">General Classification</td>
+           <td style="padding-left: 40pt;"><a href="#text"> Text Modification Tags</a></td>
+           <td style="padding-left: 40pt;"><a href="#list">Lists</a></td>
+           <td style="padding-left: 40pt;"><a href="#Media">Media Tags</a> </td>
+           <td style="padding-left: 40pt; padding-right: 40pt;" ><a href="#Container">Container Tags</a></td>
+           <td style="padding-bottom: 10pt;"><button type="button"  class="btn btn-primary position-relative">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button></td>
+          <br>
+          <td style="padding-left: 40pt; padding-bottom: 10pt;"><button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button></td>
+        </tr>
+    </table>
+    <div class="card">
+        <h1 id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">General Classification</h1>
+    </div>
+    <table class="table table-bordered align-middle table-light ">
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="card-body" style="justify-content: left;">
+                    <blockquote>
+                       <h6> Container tags which don't have their own content:</h6>
+                        <ol>
+                            <li>div</li>
+                            <li>table</li>
+                            <li>body</li>
+                            <li>head</li>
+                        </ol>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body" style="justify-content: left;">
+                    <blockquote>
+                        <h6>Tags which need not be closed:</h6>
+                        <ol>
+                            <li>h1</li>
+                            <li>img</li>
+                            <li>hr</li>
+                        </ol>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body" style="justify-content: left;">
+                    <blockquote>
+                       <h6>Tags which must be opened and closed, the content is entered in between opening and closing tags:</h6> 
+                        <ol>
+                            <li>h1</li>
+                            <li>td</li>
+                            <li>p</li>
+                            <li>b</li>
+                        </ol>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body" style="justify-content: left;">
+                    <blockquote>
+                        <h6> Parent and child tags:</h6>
+                        <ol>
+                            <li>table</li>
+                            <li>tr</li>
+                            <li>td</li>
+                        </ol>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body" style="justify-content: left;">
+                    <blockquote>
+                        <h6>Tags that have attributes like:</h6>
+                        <ol>
+                            <li>id</li>
+                            <li>class</li>
+                            <li>style</li>
+                        </ol>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <tr>
+             <div class="card">
+        <h1 id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Text Modification Tags</h1>
+    </div>
+            <td>
+                <table class="table table-info table-bordered align-middle " style="width: 100%; height: 340px; border-radius: 13pt; padding: 5pt;">
+
+                    <tr>
+                        <td>
+                            <h1 style="color: brown;font-size: 55pt;">h1</h1>
+                        </td>
+                        <td>
+                            <h2 style="color: burlywood; font-size: 45pt;">h2</h2>
+                        </td>
+                        <td>
+                            <h3 style="color: cadetblue; font-size: 35pt;">h3</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="color: chocolate; font-size: 25pt;">h4</h4>
+                        </td>
+                        <td>
+                            <h5 style="color: darkgoldenrod;font-size: 15pt;">h5</h5>
+                        </td>
+                        <td>
+                            <h6 style="color: darkmagenta;font-size: 5pt;">h6</h6>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td> 
+                <table class="table table-info table-bordered align-middle " >
+                    <tr class="table-primary"><td id="text">Text formatting:</td></tr>
+               
+                    <tr>
+                        <td><b>bold</b> </td>
+                    </tr>
+                    <tr>
+                        <td><i>italic</i></td>
+                    </tr>
+                    <tr>
+                        <td><u>underline</u></td>
+                    </tr>
+
+                    <tr>
+                        <td><strike>strike</strike> </td>
+                    </tr>
+                    <tr>
+                        <td>X<sup>superscript</sup> y <sub>subscript</sub></td>
+                    </tr>
+                </table>
+
+            </td>
+            <td style="text-align: center;">Punctuation tags :
+                <blockquote><q> I'm a Trillionare</q> </blockquote>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">&lt;p&gt;&lt;/p&gt;
+                <p>Lorem ipsum <code>push()</code> sit amet, consectetur adipisicing elit. Aliquid, ad.
+                </p>
+            </td>
+            <td style="text-align: center;" >
+                <!-- &lt;a&gt;&lt;/a&gt; <a href="http://localhost:8090">Click to go.</a> -->
+                <button type="button" class="btn btn-secondary">Click to go</button>
+                <button type="button" class="btn btn-outline-secondary">Click to go</button>
+
+
+            </td>
+        </tr>
+        <tr class="table-primary" style="height: 50pt;">
+            <th id="list" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">LISTS</th>
+        </tr>
+
+        <tr class="new-tegomin-regular">
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt; " class="new-tegomin-regular"><br>
+                <ol type="a">
+                    <li>Apple</li>
+                    <li>Milk</li>
+                    <li>Bread</li>
+                    <li>chocolate</li>
+                    <li>Eggs</li>
+                </ol>
+                
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;"><ol type="I">
+                <!-- li{Hello$}*5 -->
+                <li>Hello1</li>
+                <li>Hello2</li>
+                <li>Hello3</li>
+                <li>Hello4</li>
+                <li>Hello5</li>
+            </ol>
+        </td>
+        <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ul  ><li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li></ul>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ol type="1">
+                    <!-- li{Hello$}*5 -->
+                    <li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li>
+                </ol>
+            </td>
+            <td style="text-align: justify; padding-left: 10pt; padding-right: 10pt;">
+                <ol type="i">
+                    <!-- li{Hello$}*5 -->
+                    <li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                    <li>Hello5</li>
+                </ol>
+            </td>
+        </tr>
+        <tr class="table-primary">
+            <th id="Media" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Media Tags</th>
+        </tr>
+        <tr>
+            <td >
+                <h1 style="padding-top: 20pt;text-align: center;">IMAGE TAG</h1><img src="circuit.png" width="300" height="150" alt="CircuitBreaker" style="text-align: justify;"></td>
+            <td>
+                <h1 style="padding-top: 20pt;text-align: center;">VIDEO TAG</h1><video controls autoplay width="300" height="200" poster="circuit.png" loop muted style="text-align: center;"><source src="tech.webm" ></video></td>
+            <td >
+                <h1 style="text-align: center;">AUDIO TAG</h1>&lt;audio&gt;&lt;/audio&gt;<audio src=""></audio></td>
+            <td >
+                <h1 style="text-align: center;">IFRAME TAG</h1><iframe src="first.html" frameborder="3"></iframe></td>
+            <td style="text-align: center;" ><h1>FIGURE TAG</h1><figure><img src="circuit.png" alt="Springboot" style="width: 100pt; height: 50pt;"> <figcaption style="padding-left: 25%;">SpringBoot</figcaption></figure></td>
+        </tr >
+        <tr class="table-primary">
+            <th id="Container" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Container Tags</th>
+        </tr>
+        <tr class="playwrite-tz">
+            
+            <td class=""> <div class="container">
+             <!-- div.container>div*2>h3*2{Hello$} -->
+
+                <div>
+                    <h3>Hello1</h3>
+                    <h3>Hello2</h3>
+                </div>
+                <div>
+                    <h3>Hello1</h3>
+                    <h3>Hello2</h3>
+                </div>
+                
+            </div>
+        </td>
+            <td><span class="content">
+                <!-- span.content>span*2>h3*2{Welcome$} -->
+                <span>
+                    <h3>Welcome1</h3>
+                    <h3>Welcome2</h3>
+                </span>
+                <span>
+                    <h3>Welcome1</h3>
+                    <h3>Welcome2</h3>
+                </span>
+                
+            </span></td>
+            <td>
+                <!-- head>nav>ul>li*3>a:link{Click$} -->
+                <header>
+                    <h2>UST TRV</h2>
+                <nav>
+                    <ul>
+                        <li><a href="http://">Click1</a></li>
+                        <li><a href="http://">Click2</a></li>
+                        <li><a href="http://">Click3</a></li>
+                    </ul>
+                </nav>
+                </header>
+            </td>
+            <td>
+                <!-- main>secion*3>article>p>lorem6 -->
+
+                <main>
+                    <secion>
+                        <article>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </article>
+                    </secion>
+                    <secion>
+                        <article>
+                            <p>Fugiat perferendis sapiente minus culpa voluptas?</p>
+                        </article>
+                    </secion>
+                    <secion>
+                        <article>
+                            <p>Et debitis exercitationem sequi sed suscipit?</p>
+                        </article>
+                    </secion>
+                </main>
+            </td>
+            <td>
+                <!-- header>(h4>{UST TVM}>nav>ul>li*3>a:link{Click$})+(main>section*3>article*3>p>lorem5+aside*2{hello$})+(footer>p+ul>li*2>a:link*2{click$}) -->
+                <header>
+                <h4>
+                    UST TVM
+                    <nav>
+                        <ul>
+                            <li><a href="http://">Click1</a></li>
+                            <li><a href="http://">Click2</a></li>
+                            <li><a href="http://">Click3</a></li>
+                        </ul>
+                    </nav>
+                </h4>
+               </header>
+               <!-- <main>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Dolores nostrum voluptate ab sapiente.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Tempore velit commodi cupiditate assumenda.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Inventore deleniti facilis autem dolorem.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Praesentium nam minus at delectus.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Obcaecati facere quos error alias.
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Necessitatibus error totam repudiandae sint!
+                            <aside>hello1</aside>
+                            <aside>hello2</aside>
+                        </p>
+                    </article>
+                </section>
+               </main> -->
+               
+
+            </li></td>
+        </tr>
+        <tr class="table-primary">
+            <th id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Input Tags</th>
+        </tr>
+        <tr style="height: 40pt;">
+            <form action="myForm">
+            <td><label for="calender">Choose DOB: </label><input type="date" name="calender" id="mycal" placeholder="Date"></td>
+            <td><label for="timet1">Choose TIME: </label><input type="time" name="timet1" id="mytime" placeholder="Time"></td>
+            <td><label for="userid">Choose NAME: </label><input type="text" name="userid" id="uid" placeholder="Username"></td>
+            <td><label for="age">Choose AGE: </label><input type="number" name="age" id="agenum" placeholder="Age" min="15" max="35"></td>
+            <td><label for="emailid">Choose EMAIL: </label><input type="email" name="emailid" id="email" placeholder="Email"></td>
+            
+        </form>
+
+        </tr>
+        <tr class="table-primary">
+            <th id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">Various Tags</th>
+        </tr>
+        <tr style="height: 40pt;">
+
+            <td style="text-align: center;"><h3>Choose the color</h3> <input type="color" name="" style="text-align: center;" id="" class="form-control form-control-color text-center"></td>
+            <td style="text-align: center;">
+                <label for="customRange1" class="form-label">Select Range</label>
+                <input type="range" class="form-range" id="customRange1">
+            </td>
+            <td style="text-align: center;"><h3>Search</h3><input type="search" name="" id="" placeholder="search"></td>
+            <td style="text-align: center;">
+                <button type="button" class="btn btn-primary">Insert</button>
+                <button type="button" class="btn btn-primary">Select</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+
+    
+            </td>
+            <td style="text-align: center;"><h3>File</h3><input type="file" name="" id=""></td>
+        </tr>
+        <tr class="table-primary">
+            <th id="general" colspan="5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large;">CheckBox Tags</th>
+        </tr>
+        <tr style="height: 100pt;">
+           
+            <td style="text-align: center;"> 
+                <h5>Checkboxes:</h3>
+                <div class="form-check">
+               <input type="checkbox" name="mtech" value="mtech" id="mtech" class="form-check-input">
+               <label for="mtech">Mtech</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" name="mba" value="mba" id="mba" class="form-check-input">
+                <label for="mtech">MBA</label>
+             </div>
+             <div class="form-check">
+                <input type="checkbox" name="msc" value="msc" id="msc" class="form-check-input">
+                <label for="mtech">Msc</label>
+             </div>
+            <td style="text-align: center;">
+                <h5>Radio:</h3>
+                    <div class="form-check">
+                   <input type="radio" name="mtech" value="mtech" id="mtech" class="form-check-input">
+                   <label for="mtech">Mtech</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="mba" value="mba" id="mba" class="form-check-input">
+                    <label for="mtech">MBA</label>
+                 </div>
+                 <div class="form-check">
+                    <input type="radio" name="msc" value="msc" id="msc" class="form-check-input">
+                    <label for="mtech">Msc</label>
+                 </div>            <td style="text-align: center;">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+                
+            </td>
+            <td style="text-align: center;">
+                <!-- select>option[value="item$"]*5>{item$} -->
+
+                <select class="form-select" multiple aria-label="Multiple select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+
+            </td>
+            <td style="text-align: center;">Feedback
+                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+
+            </td>
+        </tr>
+       
+    </table>
+    <button>
+    <a href="#top">go to top</a></button>
+    <p id="bottom"></p>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Ebthisam. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>
