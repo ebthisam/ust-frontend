@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const square = function(n){
+            return n*n;
+        }
+        //let s=square;
+        var result=square(5);
+        console.log(result);
+
+
+        const square1=(n)=>{
+            return n*n;
+        }
+        console.log(square1(9));
+        alert(square(9));
+
+        const area=(l,b)=>{
+
+            return (l*b)/3;
+        }
+        document.write("The area is:"+area(2,23));
+
+
+        const fibonacci=(n)=>{
+            var a=0;
+            var b=1;
+            var result="";
+            for(let i=1;i<=n;i++){
+                result += a + " ";
+                var c=a+b;
+                a=b;
+                b=c;
+            }
+            return result;
+        }
+        document.write("<br>");
+        document.write(fibonacci(5));
+
+        //callback functions
+        const isEven=(n)=>{
+            return n%2==0;
+        }
+        let printMsg=(evenFunc,num)=>{
+            const isNumEven=evenFunc(num);
+            console.log(`${num} is an even number: ${isNumEven}`);
+        }
+        printMsg(isEven,25);
+
+        //objects in js
+        var movie={name:"Titanic",year:1997};
+        console.log(movie.name);
+        console.log(movie.year);
+        movie.hero="Jack";
+        console.log(movie);
+
+        //json objects
+        var jsonRef={
+
+                data:[
+                        {"company":"google","location":"Bangalore","Country":"India"},
+                        {"company":"Infosys","location":"trivandrum","Country":"India"},
+                        {"company":"TCS","location":"Mumbai","Country":"India"},
+                        {"company":"UST","location":"Trivandrum","Country":"India"},
+                        {"company":"Nvidia","location":"Santaclara","Country":"USA"},
+
+                ]
+
+        };
+        console.log(jsonRef.data);
+        const datas=jsonRef.data.filter(dat=>{
+            const dats= dat.location=="Trivandrum";
+            return dats;
+        })
+        console.log(datas);
+        document.write(JSON.stringify(datas));
+        
+        jsonRef.data.forEach((item)=>{
+            document.write(item.company);
+        })
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

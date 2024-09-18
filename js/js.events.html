@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function saygreetings(){
+            alert("Hello")
+        }
+    function showSeason(){
+        var month=new Date().getMonth();
+        if(month>=6 && month<9)
+            alert("Monsoon Season");
+    }
+    function green(){
+        document.getElementById("greendiv").style.backgroundColor="green";
+        document.getElementById("greendiv").style.color="white";
+        
+    }
+    function violet(){
+        document.getElementById("violetdiv").style.backgroundColor="violet";
+        document.getElementById("violetdiv").style.fontSize="50px"
+        document.getElementById("violetdiv").style.textAlign="center";
+        document.getElementById("violetdiv").style.border="2px solid black";
+        document.getElementById("violetdiv").style.alignItems="center";
+
+
+    }
+    function validate(){
+        alert("validating...");
+        var u=document.login.username.value;
+        var p=document.login.password.value;
+        alert(u+" "+p);
+        if(u.length()>8 && p.length()>8)
+            return true;
+        else 
+            return false;
+
+    }
+
+    
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <fieldset>
+    <legend>Login Form</legend>
+    <form name="login" action="" method="post" onsubmit="return validate()">
+        <label for="username">username</label>
+        <input type="text" name="username" id="uid"><br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="pid"><br>
+        
+        <input type="submit" value="go">
+        <input type="reset" value="clear">
+
+
+        <!-- <input type="button" value="greet" onclick="saygreetings()">
+        <input type="button" value="season" onclick="showSeason()">
+
+        <input type="button" value="green" onclick="green()">
+        <input type="button" value="violet" onclick="violet()"> -->
+    </fieldset>
+    </form>
+    <br>
+    <div id="greendiv" class="greendiv">
+        Hello <br> <br> <br>
+    </div>
+    <div id="violetdiv" class="violetdiv">
+        Hello <br> <br> <br>
+    </div>
+    
+</body>
+</html>

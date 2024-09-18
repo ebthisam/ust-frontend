@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        body{
+            text-align: center;;
+        }
+    </style>
+    <script>
+        // var data=[3,4,5,6,7,8];
+        // console.log(data);
+        // data.push(180,200);
+        // console.log(data);
+        // data.pop();//removes the last element
+        // console.log(data);
+        // data.shift();//removes the first element
+        // console.log(data);
+        // data.unshift(100,200,300);
+        // console.log(data);
+        // for(let i=1;i<=3;i++){
+        //     data.shift();
+        // }
+        // console.log(data);
+
+        // -------------------functions------------------
+            // var data=[1,2,3,4,5];
+            // var total=0;
+
+            // function sum(){
+            //     var total=0;
+
+            //     // for(let i=0;i<data.length;i++){
+            //     //     total+=data[i];
+            //     // }
+            //     // alert(total);
+            //     data.forEach((item)=>{
+            //         total+=item;
+            //     })
+            //     //alert(total);
+
+            // }
+            // sum();
+            // alert(total);
+
+            // ---------------------------------------------
+
+            // function factorial(n){
+            //     var i=1;
+            //     var fact=1;
+            //     while(i<=n){
+            //         fact*=i;
+            //         i++;
+            //     }
+            //     return fact;
+            // }
+            // var num=parseInt(prompt("Enter the number to find the factorial"));
+            // var result=factorial(num);
+            // alert(result);
+            
+
+            // -----------------------------------------------
+
+        //     for(let j=1;j<=10;j++){
+        //     for(let i=1;i<=10;i++){
+                
+        //         document.writeln(i*j);
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // --------------------------------------------------------
+
+        //array method filter
+        const data1=[3,6,9,5,3,65,7,3,66];
+        const filteredData=data1.filter((n)=>{
+            return n<10;
+
+        });
+        console.log(filteredData);
+       
+        //array method map
+        const filteredData1=data1.map((n)=>{
+            return n*3;
+
+        });
+        console.log(filteredData1);
+
+        //array nethod map
+        const members=["John","Joe1","joe4"];
+        const nominees=members.map((member)=>{
+            return member+" joined contest"
+        });
+        console.log(nominees);
+
+        //array method forEach
+        data1.forEach((n)=>{
+            console.log(n*3);
+
+        });
+        //array method reduce
+        const nums=[2,6,8,10,7];
+        const sum=nums.reduce((accumulator,curVal)=>{
+            console.log(accumulator,curVal);
+            return accumulator+curVal;
+        });
+        console.log(sum);
+
+
+
+       
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
